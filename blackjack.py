@@ -325,29 +325,29 @@ if player == "3":
 ############################################################################################################################################################################
 
 
-time.sleep(1)
-print("turn to 3")
-time.sleep(1)
-print(psd_3, "you have ", number_player3)
-time.sleep(1)
-second_try_1 = str(input("do you wanna take a second card [y/n]:"))
-
-if second_try_1 == "y":
-    number2_player3 = random.randint(1, 21)
-    final_number3 = number2_player3 + number_player3
     time.sleep(1)
-    print("you have", final_number1)
+    print("turn to 3")
+    time.sleep(1)
+    print(psd_3, "you have ", number_player3)
+    time.sleep(1)
+    second_try_1 = str(input("do you wanna take a second card [y/n]:"))
 
-    if final_number3 > 21:
-        difference = final_number3 - 21
+    if second_try_1 == "y":
+        number2_player3 = random.randint(1, 21)
+        final_number3 = number2_player3 + number_player3
         time.sleep(1)
-        print("sorry you have", final_number3, "more than 21")
-        win2 = 2
+        print("you have", final_number1)
 
-    if final_number3 < 21:
-        time.sleep(1)
-        print("gg ", psd_3, " you still in course")
-        win1 = 1
+        if final_number3 > 21:
+            difference = final_number3 - 21
+            time.sleep(1)
+            print("sorry you have", final_number3, "more than 21")
+            win2 = 2
+
+        if final_number3 < 21:
+            time.sleep(1)
+            print("gg ", psd_3, " you still in course")
+            win1 = 1
 
 
     if  final_number2 > final_number1 > 21:
@@ -401,6 +401,112 @@ if player == "4":
     print("player 3 have", number_player3)
     time.sleep(1)
     print("player 4 have", number_player4)
+
+    print("turn to 1")
+    time.sleep(1)
+    print(psd_1, "you have ", number_player1)
+    time.sleep(1)
+    second_try_1 = str(input("do you wanna take a second card [y/n]:"))
+
+    if second_try_1 == "y":
+        number2_player1 = random.randint(1, 21)
+        final_number1 = number2_player1 + number_player1
+        time.sleep(1)
+        print("you have",final_number1)
+
+        if final_number1 > 21:
+            difference = final_number1 - 21
+            time.sleep(1)
+            print("sorry you have",final_number1 ,"more than 21")
+            win2 = 2
+
+        if final_number1 < 21:
+            time.sleep(1)
+            print("gg ", psd_1," you still in course")
+            win1 = 1
+############################################################################################################################################################################
+############################################################################################################################################################################
+
+    time.sleep(1)
+    print("turn to 2")
+    time.sleep(1)
+    print(psd_2, "you have ", number_player2)
+    second_try_2 = str(input("do you wanna take a second card [y/n]:"))
+
+
+    if second_try_2 == "y":
+        number2_player2 = random.randint(1, 21)
+        final_number2 = number2_player2 + number_player2
+        time.sleep(1)
+        print("you have", final_number2)
+
+        if final_number2 > 21:
+            difference2 = final_number2 - 21
+            time.sleep(1)
+            print("sorry you have", difference2, "more than 21")
+            win2 = 0
+
+        if final_number2 < 21:
+            time.sleep(1)
+            print("gg", psd_2, "you finish with", final_number2)
+            win2 = 1
+
+############################################################################################################################################################################
+############################################################################################################################################################################
+
+
+    time.sleep(1)
+    print("turn to 3")
+    time.sleep(1)
+    print(psd_3, "you have ", number_player3)
+    time.sleep(1)
+    second_try_1 = str(input("do you wanna take a second card [y/n]:"))
+
+    if second_try_1 == "y":
+        number2_player3 = random.randint(1, 21)
+        final_number3 = number2_player3 + number_player3
+        time.sleep(1)
+        print("you have", final_number1)
+
+        if final_number3 > 21:
+            difference = final_number3 - 21
+            time.sleep(1)
+            print("sorry you have", final_number3, "more than 21")
+            win2 = 2
+
+        if final_number3 < 21:
+            time.sleep(1)
+            print("gg ", psd_3, " you still in course")
+            win1 = 1
+
+############################################################################################################################################################################
+############################################################################################################################################################################
+
+
+    time.sleep(1)
+    print("turn to 4")
+    time.sleep(1)
+    print(psd_4, "you have ", number_player4)
+    time.sleep(1)
+    second_try_4 = str(input("do you wanna take a second card [y/n]:"))
+
+    if second_try_4 == "y":
+        number2_player4 = random.randint(1, 21)
+        final_number4 = number2_player4 + number_player4
+        time.sleep(1)
+        print("you have", final_number1)
+
+        if final_number4 > 21:
+            difference = final_number4 - 21
+            time.sleep(1)
+            print("sorry you have", final_number4, "more than 21")
+            win2 = 2
+
+        if final_number4 < 21:
+            time.sleep(1)
+            print("gg ", psd_4, " you still in course")
+            win1 = 1
+
 
 else:
     print("")
