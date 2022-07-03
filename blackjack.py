@@ -508,5 +508,24 @@ if player == "4":
             win1 = 1
 
 
+    if  final_number2 > final_number1 > 21:
+        print("gg", psd_1,"you just win")
+
+    if final_number1 > final_number2 > 21:
+        print("gg", psd_2, "you win")
+
+    if final_number3 < final_number2 > 21:
+
+        if final_number3 > final_number1 < 21:
+            print("gg", psd_3,"you win !")
+
+        else:
+            print("coming soon")
+
+    if final_number1 == final_number2:
+        print("equality there's no winner")
+
+
+
 else:
     print("")
